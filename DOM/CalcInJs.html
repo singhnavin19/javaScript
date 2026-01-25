@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    no1<input type="number" id="no1">
+    no2<input type="number" id="no2">
+    result<input type="text" id="result" readonly>
+    <button id="addBtn">Add</button>
+    <script>
+        let addBtn=document.querySelector("#addBtn");
+        addBtn.addEventListener("click",()=>{
+            let no1=Number(document.querySelector("#no1").value);
+            let no2=Number(document.querySelector("#no2").value);
+            let result=no1+no2;    
+            console.log("add karha muze",result)
+            document.getElementById("result").value=result
+        });
+    </script>
+</body>
+</html>

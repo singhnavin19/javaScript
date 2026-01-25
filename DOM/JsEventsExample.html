@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+    <button id="hello1">sayHello</button>
+    <script>
+        let helloBtn=document.querySelector("#hello1");
+        console.log(helloBtn)
+        function sayHello1(){
+            window.alert("hello from var function");
+        }
+        helloBtn.addEventListener("click",sayHello1);
+        helloBtn.addEventListener("click",()=>{
+            window.alert("Bye Bye")
+        })
+    </script>
+    </body>
+</body>
+</html>
